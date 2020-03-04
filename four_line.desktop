@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=Four line for terminal
+Exec=gnome-terminal -e "'/home/danel/Mahaigaina/Epitech/C pool/Rendu/prueba/bin/four_line'"
+Terminal=true
+Icon=/home/danel/Mahaigaina/Epitech/C pool/Rendu/prueba/icon/icon.png
