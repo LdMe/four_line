@@ -2,4 +2,7 @@
 app_name=$(grep "app_name=" install.sh | sed -e 's/app_name=//' | sed  -e 's/\"//g' )
 
 rm -f ~/.local/share/applications/$app_name.desktop
-sed -i '/app_name/d' ~/.bash_aliases
+sed -i "/$app_name/d" ~/.bash_aliases
+if [[ $# -lt 1 ]]; then
+	echo "$app_name uninstalled succesfully"
+fi
