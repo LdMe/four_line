@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Type=Application
-Version=1.0
-Name=Four line for terminal
-Exec=gnome-terminal -e "'/home/danel/EPITECH/four_line/bin/four_line'"
-Terminal=true
-Icon=/home/danel/EPITECH/four_line/icon/icon.png
