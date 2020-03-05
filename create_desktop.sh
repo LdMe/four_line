@@ -14,13 +14,9 @@ if [ $# -ge 3 ];
 then
 	description=$3
 fi
-
 path=$(pwd)
-#This step is to avoid errors because of spaces in directory names 
+#This step is to avoid possible errors because of spaces in directory names 
 path=$(echo "$path" | sed -e 's/[[:space:]]/\\ /g')
-
-
-
 path_ex="$path/bin/four_line"
 path_uninstall="$path/uninstall.sh"
 line="Exec=gnome-terminal -e \"${path_ex@Q}\""

@@ -9,11 +9,11 @@ echo -e "previous versions uninstalled\n"
 ./compile.sh
 echo -e "executable file compiled\n"
 #create desktop icon and alias for terminal 
-# application name - version - description for icon
-./create_desktop.sh $app_name $version "$description" 
-
+#            		app name - version - description for icon
+./create_desktop.sh $app_name  $version   "$description" 
+#move the .desktop file to your user's application directory to make it visible in your applications menu
 mv $app_name.desktop ~/.local/share/applications/$app_name.desktop
-echo -e "desktop icon created at ~/.local/share/applications/$app_name.desktop\n"
+echo -e ".desktop file created at ~/.local/share/applications/$app_name.desktop\n"
 echo -e "alias created in ~/.bash_aliases\n"
 echo -e "restart terminal or type 'bash' to enable the alias '$app_name'\n"
 echo -e "to uninstall it, type '"$app_name"_uninstall' or run uninstall.sh "
